@@ -39,31 +39,14 @@ function justDrop(droperId, roterId, element) {
     const theId = document.getElementById(droperId);
     const theId2 = document.getElementById(roterId);
 
-    // if (screen.width < 700) {
-    //     if (element.style.backgroundColor != "rgb(238, 89, 33)") {
-    //         theId.classList.remove('d-none');
-    //         theId2.style.rotate = '180deg';
-    //         element.style.backgroundColor = "#EE5921";
-    //         element.style.color = "#fff";
-    //         element.style.borderRadius = "3px";
-    //         theId2.querySelector("path").setAttribute("stroke", "#FFF");
-    //     } else {
-    //         theId.classList.add('d-none');
-    //         theId2.style.rotate = '0deg';
-    //         element.style.backgroundColor = "unset";
-    //         element.style.color = "#3C3C3C";
-    //         element.style.borderRadius = "3px";
-    //         theId2.querySelector("path").setAttribute("stroke", "#3C3C3C");
-    //     }
-    // } else {
-        if (theId.classList.contains('d-none')) {
-            theId.classList.remove('d-none');
-            theId2.style.rotate = '180deg';
-            element.classList.add("active")
-        } else {
-            theId.classList.add('d-none');
-            theId2.style.rotate = '0deg';
-            element.classList.remove("active")
-        }
-    // }
+    
+    if (theId.classList.contains('d-none')) {
+        theId.classList.remove('d-none');
+        theId2.style.rotate = '180deg';
+        element.classList.add("active")
+    } else {
+        theId.classList.add('d-none');
+        theId2.style.rotate = '0deg';
+        element.classList.remove("active")
+    }
 }
