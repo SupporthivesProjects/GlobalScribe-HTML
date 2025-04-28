@@ -50,3 +50,32 @@ function justDrop(droperId, roterId, element) {
         element.classList.remove("active")
     }
 }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // On load: fix styling for already open items
+    document.querySelectorAll(".accordion-collapse.show").forEach(openItem => {
+      const button = openItem.previousElementSibling.querySelector(".accordion-button");
+      button.classList.remove("collapsed");
+      button.classList.add("open");
+    });
+
+    // Add event listeners for Bootstrap's collapse events
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach(item => {
+      const collapse = item.querySelector(".accordion-collapse");
+      const button = item.querySelector(".accordion-button");
+
+      collapse.addEventListener("shown.bs.collapse", () => {
+        button.classList.remove("collapsed");
+        button.classList.add("open");
+      });
+
+      collapse.addEventListener("hidden.bs.collapse", () => {
+        button.classList.remove("open");
+        button.classList.add("collapsed");
+      });
+    });
+  });
