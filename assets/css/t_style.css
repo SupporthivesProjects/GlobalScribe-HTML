@@ -61,6 +61,15 @@
     width: 539px;
     margin-left: 141px;
 }
+.aboutus_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 215.5px;
+    width: 517px;
+    margin-left: auto;
+    margin-right: 163px;
+}
 
 
 .inner_right_cd {
@@ -1522,6 +1531,12 @@
         padding: 40px 24px;
     }
 
+    .aboutus_1 {
+        align-items: center;
+        width: auto;
+        margin: 0px;
+        padding: 40px 24px;
+    }
     .st_inner_right_cd {
         align-items: center;
         width: auto;
@@ -2380,6 +2395,9 @@
     .joinus_1 {
         margin-left: 20px;
     }
+    .aboutus_1 {
+        margin-right: 20px;
+    }
     .language_section {
         gap: 64px;
     }
@@ -2397,6 +2415,9 @@
 
     .joinus_1 {
         margin-left: 56px;
+    }
+     .aboutus_1 {
+        margin-right: 56px;
     }
 
     .cd_sec2 {
@@ -2455,6 +2476,9 @@
     .joinus_1 {
         margin-left: 96px;
     }
+    .aboutus_1 {
+        margin-right: 96px;
+    }
 
     .cd_sec2 {
         gap: 40px;
@@ -2512,6 +2536,9 @@
     .joinus_1 {
         margin-left: 130px;
     }
+    .aboutus_1 {
+        margin-right: 130px;
+    }
 
     .cd_sec2 {
         gap: 40px;
@@ -2543,6 +2570,9 @@
 
     .joinus_1 {
         margin-left: 130px;
+    }
+    .aboutus_1 {
+        margin-right: 130px;
     }
 }
 
