@@ -1,6 +1,4 @@
-body {
-    background: grey;
-}
+
 
 .desktop_none {
     display: none;
@@ -12,25 +10,25 @@ body {
 
 /* ----------------------- Checkbox ----------------------- */
 
-.c-checkbox input[type='checkbox']:checked~label:after, .c-checkbox input[type='checkbox']:checked~.label:after {
+.c-checkbox2 input[type='checkbox']:checked~label:after, .c-checkbox2 input[type='checkbox']:checked~.label:after {
     transform: scale(1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     opacity: 1;
     visibility: visible;
 }
-.c-checkbox>.c-div>label:before, .c-checkbox>.c-div>.label:before {
+.c-checkbox2>.c-div2>label:before, .c-checkbox2>.c-div2>.label:before {
     content: "";
     position: absolute;
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     margin-right: 10px;
     background: transparent;
-    border: 2px solid #EE5921;
+    border: 1px solid #30325E;
     box-sizing: border-box;
     /* box-shadow: inset 0px 4px 4px rgb(0 0 0 / 5%); */
-    border-radius: 4px;
+    border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
     left: 3px;
@@ -39,11 +37,11 @@ input[type=checkbox], input[type=radio] {
     box-sizing: border-box;
     padding: 0;
 }
-.c-checkbox input[type='checkbox'] {
+.c-checkbox2 input[type='checkbox'] {
     display: none;
 }
-.c-checkbox input[type='checkbox']~label:after, .c-checkbox input[type='checkbox']~.label:after {
-    content: "✔";
+.c-checkbox2 input[type='checkbox']~label:after, .c-checkbox2 input[type='checkbox']~.label:after {
+    content: url(../img/blue_disc.svg);
     display: block;
     position: absolute;
     color: #FFFFFF !important;
@@ -55,8 +53,8 @@ input[type=checkbox], input[type=radio] {
     line-height: 12px;
     height: 14px;
     width: 14px;
-    left: 5px;
-    top: 31px;
+    left: 7px;
+    top: 40px;
     padding-top: 1px;
     padding-left: 1px;
     transform-origin: 50% 50%;
@@ -71,38 +69,1306 @@ input[type=checkbox], input[type=radio] {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    background: var(--Primary, #EE5921);
 }
-.c-checkbox {
+.c-checkbox2 {
     position: relative;
     margin-bottom: 0px;
 }
-.login_strong {
-    color: var(--Neutral-700, #656565);
+.login_strong2 {
+    color: var(--Navy, #30325E);
 
-    /* Desktop/Body */
-    font-family: 'Poppins';
+    /* P/S */
+    font-family: "Instrument Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 158%; /* 25.28px */
+    line-height: 150%; /* 24px */
     margin-bottom: 0px;
 }
-.login_strong a {
-    color: var(--Highlight, #397BFC);
+.login_strong2 a {
+    color: var(--Blue, #156EEB);
 
-    /* Desktop/Body */
-    font-family: 'Poppins';
+    /* P/S */
+    font-family: "Instrument Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 158%;
+    line-height: 150%;
     margin-bottom: 0px;
     text-decoration: none;
 }
-.c-text {
+.c-text2 {
     margin-left: 40px;
 }
+
+
+.dash_s1 {
+    background: url(../img/dash_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 151px 0px 80px 0px;
+}
+.dash_title {
+    color: var(--Navy, #30325E);
+    text-align: center;
+    /* H/H2 */
+    font-family: "Instrument Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.dash_subtitle {
+    color: var(--Txt, #7F7F7F);
+    text-align: center;
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 0px;
+}
+.dash_content {
+    margin-bottom: 24px;
+}
+.dash_pre_title {
+    color: var(--Grey-Scale-20, #333);
+
+    /* P/Small */
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.dash_pre_pill {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid #E9E9E9;
+    background: var(--Grey-Scale-99, #FCFCFD);
+    width: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.dash_pre_pill::before {
+    content: url('../img/global_pre_left.svg'); 
+    position: absolute; 
+    z-index: 1;
+    left: -65%;
+    top: -8px;
+} 
+.dash_pre_pill::after {
+    content: url('../img/global_pre_right.svg'); 
+    position: absolute; 
+    z-index: 1;
+    right: -65%;
+    top: -8px;
+} 
+.btn_dash {
+    display: flex;
+    padding: 12px 16px;
+    width: 216px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 100px;
+    border: 1px solid var(--Blue, #156EEB);
+    color: var(--Blue, #156EEB);
+    leading-trim: both;
+    text-edge: cap;
+
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.btn_dash.active {
+    display: flex;
+    padding: 12px 16px;
+    width: 216px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 100px;
+    border: 1px solid var(--Blue, #156EEB);
+    background: var(--Blue, #156EEB);
+    color: var(--Grey-Scale-99, #FCFCFD);
+    leading-trim: both;
+    text-edge: cap;
+    
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    opacity: 0.5;
+}
+.dash_tab_button_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.input_global {
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--Navy, #30325E);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    border-radius: var(--Lrg, 40px);
+    border: 1px solid var(--Grey-Scale-60, #98989A);
+    background: var(--Grey-Scale-99, #FCFCFD);
+}
+.input_global::placeholder {
+    color: var(--Navy, #30325E);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.account_left, .account_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+}
+.my_account_tab_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+.my_account_tab {
+    margin-left: auto;
+    margin-right: auto;
+    width: 994px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+}
+.dash_s2 {
+    padding: 48px 0px;
+    background: var(--Grey-Scale-99, #FCFCFD);
+}
+.order_history {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1048px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+}
+.table_heading {
+    color: var(--Navy, #30325E);
+
+    /* P/Submenu */
+    font-family: "Instrument Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    margin-bottom: 0px;
+}
+.btn_order_details {
+    color: var(--Blue, #156EEB);
+    leading-trim: both;
+    text-edge: cap;
+
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+.table_sub_heading {
+    color: var(--Navy, #30325E);
+    leading-trim: both;
+    text-edge: cap;
+
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.table_status_pill {
+    border-radius: 100px;
+    display: flex;
+    padding: 10px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    leading-trim: both;
+    text-edge: cap;
+
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    width: fit-content;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+.table_status_pill.yellow {
+    background: #F8E69E;
+    color: #987E14;
+}
+.table_status_pill.green {
+    background: #9BCD77;
+    color: #457025;
+}
+.order_history table thead tr th:last-child p.table_heading {
+    text-align: right;
+}
+.order_history table thead tr th:first-child p.table_heading {
+    text-align: left;
+}
+.order_history table thead tr th p.table_heading {
+    text-align: center;
+}
+.order_history table thead tr th {
+    padding: 0px 0px 11px 0px;
+    width: 219px;
+}
+.order_history table thead tr th:first-child {
+    padding: 0px 0px 11px 14px;
+}
+.order_history table thead tr th:last-child {
+    padding: 0px 14px 11px 0px;
+}
+.order_history table tbody tr td {
+    padding: 22px 0px;
+}
+.order_history table tbody tr td:first-child {
+    padding: 22px 14px;
+}
+.order_history table tbody tr td:last-child {
+    padding: 12px 14px;
+}
+.order_history table {
+    margin: 0px;
+}
+
+.indicator_text {
+    color: var(--Grey-Scale-08, #141414);
+
+    /* P/Small */
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.indicator_number {
+    color: var(--Grey-Scale-99, #FCFCFD);
+    text-align: center;
+
+    /* P/Small */
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.indicator_inner {
+    border-radius: 100px;
+    background: #7F7F7F;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 41px;
+    height: 41px;
+}
+.indicator_inner.active {
+    border-radius: 100px;
+    background: var(--Gradient, linear-gradient(180deg, #156EEB 0%, #0048AC 100%));
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 41px;
+    height: 41px;
+}
+.indicator_outer {
+    border-radius: 100px;
+    border: 1px solid var(--Grey-Scale-90, #E4E4E7);
+    background: var(--Grey-Scale-99, #FCFCFD);
+    display: flex;
+    width: 61px;
+    height: 61px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.indicator_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.indicator_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.indicator_bar {
+    width: 1px;
+    background: #B3B3B3;
+    height: 88px;
+}
+.summ_ary {
+    display: flex;
+    width: 100%;
+    max-width: 621px;
+    padding: 48px;
+
+    border-radius: 20px;
+    border: 1px solid #E1E4EB;
+    background: url(../img/grad_box.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Benefits/Shadow */
+    box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.10);
+}
+.summary_box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    align-self: stretch;
+}
+.suumary_title {
+    color: var(--Navy, #30325E);
+
+    /* H/H2 */
+    font-family: "Instrument Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.cart_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.l_c_t {
+    color: var(--Navy, #30325E);
+
+    /* H/H4 */
+    font-family: "Instrument Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.left_cart_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.l_c_s {
+    color: var(--Txt, #7F7F7F);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 0px;
+}
+
+.line {
+    height: 1px;
+    background: #B3B3B3;
+    margin: 0px;
+    width: 100%;
+}
+.suumary_title1 {
+    color: var(--Navy, #30325E);
+
+    /* H/H3 */
+    font-family: "Instrument Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    margin-bottom: 0px;
+}
+.suumary_title2 {
+    color: var(--Blue, #156EEB);
+
+    /* H/H3 */
+    font-family: "Instrument Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    margin-bottom: 0px;
+}
+.cart_tottal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.radio_title {
+    color: var(--Navy, #30325E);
+
+    /* H/H4 */
+    font-family: "Instrument Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.icon_subtitle {
+    color: var(--Txt, #7F7F7F);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 0px;
+}
+.icons_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.lowwer_content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.icons_box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+.custom_checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.billing_details_s2 {
+    padding: 64px 0px;
+}
+.billing_details_boyyom_info {
+    color: var(--Navy, #30325E);
+
+    /* P/Small */
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.billing_details_boyyom_info a {
+    color: var(--Blue, #156EEB);
+
+    /* P/Small */
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+.billing_details_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.billing_title {
+    color: var(--Navy, #30325E);
+
+    /* H/H2 */
+    font-family: "Instrument Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.billing_input_main_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+}
+.billing_details_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+}
+.billing_left {
+    border-radius: 20px;
+    border: 1px solid var(--Grey-Scale-90, #E4E4E7);
+    background: var(--Grey-Scale-97, #F7F7F8);
+    width: 757px;
+    padding: 48px;
+}
+.billing_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 56px;
+}
+.dual_btn_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.personal_information_b {
+    display: flex;
+    width: 100%;
+    max-width: 757px;
+    padding: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 27px;
+    border: 1px solid var(--Nuetral-Stroke, #BEBEBE);
+    background: var(--Nuetral-Almost-White, #FAFAFA);
+}
+.summary_subtitle {
+    color: var(--Navy, #30325E);
+
+    /* P/Submenu */
+    font-family: "Instrument Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    margin-bottom: 0px;
+}
+.radio_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+}
+.check_boxex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+.icon_title {
+    color: var(--Navy, #30325E);
+
+    /* H/H4 */
+    font-family: "Instrument Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.check_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+.form_radio .chek_inpoot:checked {
+    background-image: url(../img/radio_disc.svg);
+    height: 24px;
+    width: 24px;
+}
+.form_radio .chek_inpoot {
+    height: 24px;
+    width: 24px;
+    border-radius: var(--Lrg, 40px);
+    border: 1px solid var(--Navy, #30325E);
+    margin-top: 0px;
+}
+.form_radio {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.frm {
+    border-radius: 10px;
+    border: 2px solid var(--Grey-Scale-60, #98989A);
+    background: var(--Grey-Scale-99, #FCFCFD);
+    padding: 24px;
+    opacity: 0.5;
+}
+.frm.active {
+    border-radius: 10px;
+    border: 2px solid var(--Grey-Scale-60, #98989A);
+    background: var(--Grey-Scale-99, #FCFCFD);
+    padding: 24px;
+    opacity: 1;
+}
+.split_box {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    width: 100%;
+}
+.name_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    position: relative;
+    width: 100%;
+}
+
+.upper_split {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    width: 100%;
+}
+.name_form label {
+    color: var(--Navy, #30325E);
+
+    /* P/Submenu */
+    font-family: "Instrument Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    margin-bottom: 0px;
+}
+.impuut {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    width: 100%;
+}
+
+.upload_div {
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    color: var(--Navy, #30325E);
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    border-radius: var(--Lrg, 40px);
+    border: 1px solid var(--Grey-Scale-60, #98989A);
+    background: var(--Grey-Scale-99, #FCFCFD);
+}
+  
+.upload_placeholder {
+    color: var(--Navy, #30325E);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin: 0px;
+}
+p.suus {
+    color: var(--Grey-Scale-60, #98989A);
+
+    /* P/Small */
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.textarea_global {
+    border-radius: var(--Sml, 10px);
+    border: 1px solid var(--Grey-Scale-60, #98989A);
+    background: var(--Grey-Scale-99, #FCFCFD);
+    padding: 12px 24px 64px 24px;
+}
+.estimeted h4 {
+    color: var(--Navy, #30325E);
+    text-align: center;
+
+    /* H/H3 */
+    font-family: "Instrument Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+    margin-bottom: 0px;
+}
+.estimeted {
+    width: 100%;
+}
+.estimeted h4 span {
+    color: var(--Navy, #30325E);
+
+    /* H/H3 */
+    font-family: "Instrument Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.order_details_title {
+    color: var(--Navy, #30325E);
+
+    /* H/H2 */
+    font-family: "Instrument Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.order_details_subtitle {
+    color: var(--Txt, #7F7F7F);
+    text-align: center;
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 0px;
+}
+.order_history_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+.order_history_details_inner {
+    background: url(../img/order_detail_inner_bg.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 50px 27px 27px 27px;
+    max-width: 1022px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+}
+.oh_body_sub_inner_title {
+    color: var(--Navy, #30325E);
+
+    /* P/Submenu */
+    font-family: "Instrument Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    margin-bottom: 0px;
+}
+.oh_body_sub_inner_subtitle {
+    color: var(--Txt, #7F7F7F);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 0px;
+}
+.ohb_title {
+    color: var(--Navy, #30325E);
+
+    /* H/H3 */
+    font-family: "Instrument Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    margin-bottom: 0px;
+}
+.ohb_line {
+    background: #B3B3B3;
+    height: 1px;
+    width: 100%;
+}
+.oh_body_box_sub_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 333px;
+}
+.oh_body_box_sub_inner2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+.oh_body_box_sub_main {
+    width: 100%;
+}
+.oh_body_box_sub_outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px 40px;
+    width: 100%;
+}
+.order_history_body_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 757px;
+    width: 100%;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--Grey-Scale-90, #E4E4E7);
+    background: var(--Grey-Scale-97, #F7F7F8);
+    margin-left: auto;
+    margin-right: auto;
+}
+.order_history_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+}
+
+
+.order_history_details {
+    padding: 179px 0px 27px 0px;
+}
+.ohd_table_title {
+    color: var(--Navy, #30325E);
+
+    /* P/Submenu */
+    font-family: "Instrument Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    margin-bottom: 0px;
+    width: fit-content;
+}
+.ohd_table_subtitle {
+    color: var(--Txt, #7F7F7F);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 0px;
+    width: fit-content;
+}
+.oh_body_table_sub_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+.oh_body_table_sub_outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 8px;
+    max-width: 339px;
+    width: 100%;
+}
+.ohd_table_link {
+    padding: 0px;
+    color: var(--Blue, #156EEB);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.oh_body_box_sub_main table thead tr th:nth-child(1) {
+    padding: 0px 16px 40px 0px;
+}
+.oh_body_box_sub_main table thead tr th:nth-child(2) {
+    padding: 0px 80px 40px 21px;
+}
+.oh_body_box_sub_main table thead tr th:nth-child(3) {
+    padding: 0px 16px 40px 21px;
+}
+.oh_body_box_sub_main table thead tr th:nth-child(4) {
+    padding: 0px 16px 40px 21px;
+}
+.oh_body_box_sub_main table tbody tr td:nth-child(1) {
+    padding: 0px 16px 40px 0px;
+}
+.oh_body_box_sub_main table tbody tr td:nth-child(2) {
+    padding: 0px 80px 40px 21px;
+}
+.oh_body_box_sub_main table tbody tr td:nth-child(3) {
+    padding: 0px 16px 40px 21px;
+}
+.oh_body_box_sub_main table tbody tr td:nth-child(4) {
+    padding: 0px 16px 40px 21px;
+}
+
+.oh_body_box_sub_main table tbody tr:last-child td {
+    padding-bottom: 0px;
+}
+.oh_body_box_sub_main table {
+    margin-bottom: 0px;
+    background: transparent;
+}
+.oh_body_box_sub_main table thead tr {
+    background: transparent;
+}
+.oh_body_box_sub_main table thead tr th {
+    background: transparent;
+}
+.oh_body_box_sub_main table tbody tr {
+    background: transparent;
+}
+.oh_body_box_sub_main table tbody tr td {
+    background: transparent;
+}
+
+.go_back_btn {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    gap: 10px;
+    color: var(--Navy, #30325E);
+    leading-trim: both;
+    text-edge: cap;
+
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.hs1_pre_title {
+    color: var(--Grey-80, #C4C8D4);
+    font-family: "Instrument Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    margin-bottom: 0px;
+}
+.hs1_pre_title_div {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid #171D45;
+    background: var(--Mid-Grey-08, #0A0D1F);
+}
+.hs1_title {
+    color: var(--Absolute-White, #FFF);
+    text-align: center;
+
+    /* H/H1 */
+    font-family: "Instrument Sans";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.hs1_subtitle {
+    color: var(--Grey-Scale-40, #656567);
+    text-align: center;
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 0px;
+}
+.hs1_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 715px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hs1_content_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.hs1 {
+    position: relative;
+    padding-top: 196.5px;
+    height: 100vh;
+}
+.btn_down_arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid #DFE7FF;
+    background: var(--Grey-Scale-99, #FCFCFD);
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+}
+.hs2_title {
+    color: var(--Navy, #30325E);
+
+    /* H/H2 */
+    font-family: "Instrument Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.hs2_title span {
+    background: linear-gradient(90deg, #4D52AB 63.25%, #56CAE1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* H/H2 */
+    font-family: "Instrument Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.hs2_top {
+    max-width: 639px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hs2_card_title {
+    color: var(--Grey-Scale-08, #141414);
+
+    /* H/H4 */
+    font-family: "Instrument Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.hs2_card_subtitle {
+    color: var(--Txt, #7F7F7F);
+    text-align: center;
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 0px;
+}
+.hs2_card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+.hs2_card_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: -webkit-fill-available;
+}
+.hs2_bottom_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.hs2_bar_line {
+    width: 1px;
+    height: 104px;
+    background: #B3B3B3;
+}
+.hs2_main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 48px;
+}
+.hs2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url(../img/hs2_bg.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+}
+
 
 
 
@@ -116,12 +1382,593 @@ input[type=checkbox], input[type=radio] {
         display: block;
     }
 
-    .c-checkbox input[type='checkbox']~label:after, .c-checkbox input[type='checkbox']~.label:after {
+    .c-checkbox2 input[type='checkbox']~label:after, .c-checkbox2 input[type='checkbox']~.label:after {
         height: 15px;
-        top: 18px;
+        top: 28px;
     }
 
-    
+
+    .my_account_tab_inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .account_left, .account_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 16px;
+        width: 100%;
+    }
+    .my_account_tab {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .dash_pre_pill::before {
+        content: url('../img/global_pre_left_mobo.svg'); 
+        position: absolute; 
+        z-index: 1;
+        left: -14%;
+        top: -8px;
+    } 
+    .dash_pre_pill::after {
+        content: url('../img/global_pre_right_mobo.svg'); 
+        position: absolute; 
+        z-index: 1;
+        right: -14%;
+        top: -8px;
+    } 
+    .dash_title {
+        color: var(--Navy, #30325E);
+
+        /* H/Mobile/H1 */
+        font-family: "Instrument Sans";
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 42px */
+        text-transform: capitalize;
+        margin-bottom: 16px;
+    }
+    .dash_subtitle {
+        color: var(--Txt, #7F7F7F);
+        text-align: center;
+
+        /* P/S */
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        margin-bottom: 0px;
+    }
+    .dash_s1 {
+        background: url(../img/dash_bg_mobo.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 40px 12px;
+        border-top: 1px solid #E3E3E3;
+        border-bottom: 1px solid #E3E3E3;
+    }
+    .dashboard {
+        margin-top: 69px;
+    }
+    .dash_tab_button_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 680px;
+    }
+
+    .dash_tab_scrollable {
+        /* width: 351px; */
+        overflow-x: auto;
+        padding-right: 24px;
+    }
+    .dash_s2 {
+        padding: 24px 12px;
+        background: var(--Grey-Scale-99, #FCFCFD);
+    }
+    .order_t_head {
+        color: var(--Navy, #30325E);
+
+        /* P/Submenu */
+        font-family: "Instrument Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        margin-bottom: 0px;
+    }
+    .order_table_head_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 11px;
+        border-bottom: 1px solid #E4E4E7;
+    }
+    .order_table_body_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .order_title_text {
+        color: var(--Navy, #30325E);
+        leading-trim: both;
+        text-edge: cap;
+
+        /* P/Btn */
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
+    .order_subtitle_text {
+        color: var(--Navy, #30325E);
+        text-align: right;
+
+        /* P/Small */
+        font-family: "Instrument Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+    .order_subtitle_text_blue {
+        color: var(--Blue, #156EEB);
+        text-align: right;
+
+        /* P/Small */
+        font-family: "Instrument Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+    .order_table_body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+    .table_status_pill {
+        padding: 10px 24px;
+        leading-trim: both;
+        text-edge: cap;
+
+        /* P/Btn */
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .order_table_mobo {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .order_history_mobo {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .billing_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 0px;
+    }
+    .billing_details_s2 {
+        padding: 0px;
+    }
+    .billing_left {
+        border-radius: 0px;
+        border: unset;
+        background: #FCFCFD;
+        width: unset;
+        padding: 48px 24px;
+    }
+    .billing_title {
+        color: var(--Navy, #30325E);
+
+        /* H/Mobile/H2 */
+        font-family: "Instrument Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 36px */
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
+    .billing_details_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .billing_input_main_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 16px;
+    }
+    .input_global {
+        padding: 15px 24px;
+    }
+    .billing_details_bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+    .mo_p_0 {
+        padding: 0px;
+    }
+    .summ_ary {
+        display: flex;
+        width: 100%;
+        max-width: unset;
+        padding: 24px;
+        border-radius: 0px;
+        border: unset;
+        background: url(../img/grad_box.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-shadow: 10px 10px 46px 0px rgba(0, 0, 0, 0.10);
+    }
+    .suumary_title {
+        color: var(--Navy, #30325E);
+
+        /* H/Mobile/H2 */
+        font-family: "Instrument Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 36px */
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
+    .custom_checkbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+    .l_c_t {
+        color: var(--Navy, #30325E);
+
+        /* H/Mobile/H4 */
+        font-family: "Instrument Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 21.6px */
+        text-transform: capitalize;
+    }
+    .l_c_s {
+        color: var(--Txt, #7F7F7F);
+
+        /* P/S */
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+    }
+    .suumary_title1 {
+        color: var(--Navy, #30325E);
+
+        /* H/Mobile/H3 */
+        font-family: "Instrument Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 24px */
+        text-transform: capitalize;
+    }
+    .suumary_title2 {
+        color: var(--Blue, #156EEB);
+
+        /* H/Mobile/H3 */
+        font-family: "Instrument Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 24px */
+        text-transform: capitalize;
+    }
+    .radio_title {
+        color: var(--Navy, #30325E);
+
+        /* H/Mobile/H4 */
+        font-family: "Instrument Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 21.6px */
+        text-transform: capitalize;
+    }
+    .icon_subtitle {
+        color: var(--Txt, #7F7F7F);
+
+        /* P/S */
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+    }
+    .line {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .summary_box {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        align-self: stretch;
+    }
+    .summary_box .line:nth-of-type(1) {
+        margin: 0px;
+    }
+    .personal_information_b {
+        display: flex;
+        width: 100%;
+        max-width: 757px;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        border-radius: 0px;
+        border: unset;
+        background: #FCFCFD;
+    }
+    .summary_subtitle {
+        color: var(--Navy, #30325E);
+
+        /* P/Submenu */
+        font-family: "Instrument Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+
+    .form_radio {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .frm .icon_subtitle {
+        color: var(--Txt, #7F7F7F);
+
+        /* P/S */
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        margin-left: 48px;
+        margin-top: 16px;
+    }
+    .prz_btn_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 16px;
+    }
+    .prz_btn_div label, .prz_btn_div label.active {
+        width: 100%;
+    }
+    .estimeted h4, .estimeted h4 span {
+        color: var(--Navy, #30325E);
+        text-align: center;
+
+        /* H/Mobile/H3 */
+        font-family: "Instrument Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 24px */
+        text-transform: capitalize;
+        text-decoration-line: none;
+        text-decoration-style: none;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: none;
+        text-underline-offset: none;
+        text-underline-position: none;
+    }
+    .billing_page {
+        margin-top: 69px;
+    }
+    .order_details_title {
+        color: var(--Navy, #30325E);
+        text-align: center;
+
+        /* H/Mobile/H2 */
+        font-family: "Instrument Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 36px */
+        text-transform: capitalize;
+    }
+    .order_details_subtitle {
+        color: var(--Txt, #7F7F7F);
+        text-align: center;
+
+        /* P/S */
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+    }
+    .order_history_details {
+        padding: 24px 0px;
+        margin-top: 69px;
+    }
+    .oh_body_box_sub_inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        max-width: unset;
+    }
+    /* .order_history_body_box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: unset;
+        width: 100%;
+        padding: 24px;
+        gap: 24px;
+        border-radius: 20px;
+        border: 1px solid var(--Grey-Scale-90, #E4E4E7);
+        background: var(--Grey-Scale-97, #F7F7F8);
+        margin-left: auto;
+        margin-right: auto;
+    } */
+    .order_history_body_box:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: unset;
+        width: 100%;
+        padding: 24px 0px 24px 24px;
+        gap: 24px;
+        border-radius: 20px;
+        border: 1px solid var(--Grey-Scale-90, #E4E4E7);
+        background: var(--Grey-Scale-97, #F7F7F8);
+        margin-left: auto;
+        margin-right: auto;
+        /* min-width: 351px; */
+        border-radius: 20px 0px 0px 20px;
+    }
+    .oh_body_box_sub_main {
+        /* width: 301px; */
+        overflow: auto;
+    }
+    .oh_body_table_sub_outer {
+        min-width: 327px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 8px;
+        max-width: unset;
+        width: 100%;
+    }
+    .oh_body_box_sub_main table tbody tr td:nth-child(3) {
+        padding: 0px 16px 40px 21px;
+        min-width: 140px;
+    }
+    .order_history_details_inner {
+        background: url(../img/order_detail_inner_bg.png);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        padding: 24px;
+        max-width: 1022px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 24px;
+    }
+    #oh_body_box_sub_main {
+        padding-right: 24px;
+    }
+    .order_history_indicators .indicator_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .order_history_indicators .indicator_bar {
+        width: 100%;
+        background: #B3B3B3;
+        height: 1px;
+    }
+    .order_history_indicators .indicator_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+    .order_history_indicators .indicator_bottom_div {
+        width: 100%;
+    }
+    .indicator_text {
+        color: var(--Grey-Scale-08, #141414);
+        font-family: "Instrument Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .go_back_btn {
+        display: flex;
+        padding: 7px 24px;
+        align-items: center;
+        gap: 10px;
+        color: var(--Navy, #30325E);
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        position: unset;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {
