@@ -1,6 +1,4 @@
-body {
-    background: grey;
-}
+
 
 .desktop_none {
     display: none;
@@ -8,100 +6,6 @@ body {
 
 .mobile_none {
     display: block;
-}
-
-/* ----------------------- Checkbox ----------------------- */
-
-.c-checkbox input[type='checkbox']:checked~label:after, .c-checkbox input[type='checkbox']:checked~.label:after {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    opacity: 1;
-    visibility: visible;
-}
-.c-checkbox>.c-div>label:before, .c-checkbox>.c-div>.label:before {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-    background: transparent;
-    border: 2px solid #EE5921;
-    box-sizing: border-box;
-    /* box-shadow: inset 0px 4px 4px rgb(0 0 0 / 5%); */
-    border-radius: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 3px;
-}
-input[type=checkbox], input[type=radio] {
-    box-sizing: border-box;
-    padding: 0;
-}
-.c-checkbox input[type='checkbox'] {
-    display: none;
-}
-.c-checkbox input[type='checkbox']~label:after, .c-checkbox input[type='checkbox']~.label:after {
-    content: "✔";
-    display: block;
-    position: absolute;
-    color: #FFFFFF !important;
-    border-radius: 0;
-    border: 0;
-    font-family: 'Poppins';
-    font-size: 14px;
-    text-align: center;
-    line-height: 12px;
-    height: 14px;
-    width: 14px;
-    left: 5px;
-    top: 31px;
-    padding-top: 1px;
-    padding-left: 1px;
-    transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-transition: all .15s ease;
-    -ms-transition: all .15s ease;
-    transition: all .15s ease;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    background: var(--Primary, #EE5921);
-}
-.c-checkbox {
-    position: relative;
-    margin-bottom: 0px;
-}
-.login_strong {
-    color: var(--Neutral-700, #656565);
-
-    /* Desktop/Body */
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 158%; /* 25.28px */
-    margin-bottom: 0px;
-}
-.login_strong a {
-    color: var(--Highlight, #397BFC);
-
-    /* Desktop/Body */
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 158%;
-    margin-bottom: 0px;
-    text-decoration: none;
-}
-.c-text {
-    margin-left: 40px;
 }
 
 
@@ -114,11 +18,6 @@ input[type=checkbox], input[type=radio] {
 
     .desktop_none {
         display: block;
-    }
-
-    .c-checkbox input[type='checkbox']~label:after, .c-checkbox input[type='checkbox']~.label:after {
-        height: 15px;
-        top: 18px;
     }
 
     
