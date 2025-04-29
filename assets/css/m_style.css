@@ -1366,9 +1366,15 @@ p.suus {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-
 }
-
+.hs3_left {
+    height: 627px;
+    background: url(../img/hs3_left.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px 20px 20px 0px;
+}
 
 
 
