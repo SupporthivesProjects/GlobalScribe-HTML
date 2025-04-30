@@ -91,3 +91,23 @@ function toggleActive(button) {
     buttons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 }
+
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop:false,
+        margin: 28,
+        nav:false,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+})
