@@ -244,24 +244,136 @@
         </div>
     </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="dashboard">
+        <div class="dash_s1">
+            <div class="container">
+                <div class="dash_pre_content">
+                    <div class="dash_pre_pill">
+                        <img src="./assets/img/dash_pre_title_img.svg" alt="" class="img-fluid dash_pre_img">
+                        <p class="dash_pre_title">Everything you need, all in one place.</p>
+                    </div>
+                </div>
+                <div class="dash_content">
+                    <h1 class="dash_title">Welcome Back User</h1>
+                    <p class="dash_subtitle">From your dashboard, update account info, password, billing, and view past orders.</p>
+                </div>
+                <div class="dash_tab_scrollable">
+                    <div class="dash_tab_button_div" id="v-pills-tab" role="tablist">
+                        <button class="btn btn_dash active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Account Details</button>
+                        <button class="btn btn_dash" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Order History</button>
+                        <button class="btn btn_dash">
+                            Sign Out
+                            <img src="./assets/img/logout.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dash_s2">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home" tabindex="0">
+
+                    <div class="container">
+                        <div class="my_account_tab">
+                            
+                            <div class="my_account_tab_inner">
+                                <div class="account_left">
+                                    <input type="text" class="form-control input_global" placeholder="First Name">
+                                    <input type="text" class="form-control input_global" placeholder="Last Name">
+                                    <input type="text" class="form-control input_global" placeholder="Email Address">
+                                    <input type="text" class="form-control input_global" placeholder="Phone Number">
+                                    <input type="text" class="form-control input_global" placeholder="Password">
+                                    <input type="text" class="form-control input_global" placeholder="Confirm New Password">
+                                </div>
+                                <div class="account_right">
+                                    <input type="text" class="form-control input_global" placeholder="Address Line 1">
+                                    <input type="text" class="form-control input_global" placeholder="Address Line 2">
+                                    <input type="text" class="form-control input_global" placeholder="City/Town">
+                                    <input type="text" class="form-control input_global" placeholder="Country">
+                                    <input type="text" class="form-control input_global" placeholder="Country/State/Province">
+                                    <input type="text" class="form-control input_global" placeholder="Zip Code/Postal Code">
+                                </div>
+                            </div>
+
+                            <button class="btn btn_global w-100">
+                                Update Changes
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile" tabindex="0">
+                    <div class="container">
+                        <!-- Desktop Table -->
+                        <div class="order_history mobile_none">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><p class="table_heading">Order no #</p></th>
+                                        <th scope="col"><p class="table_heading">Date</p></th>
+                                        <th scope="col"><p class="table_heading">Quantity</p></th>
+                                        <th scope="col"><p class="table_heading">Total</p></th>
+                                        <th scope="col"><p class="table_heading">Status</p></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><button class="btn btn_order_details">12345</button></td>
+                                        <td><p class="table_sub_heading">01.12.2023</p></td>
+                                        <td><p class="table_sub_heading">4 pages</p></td>
+                                        <td><p class="table_sub_heading">£199.75</p></td>
+                                        <td><p class="table_status_pill yellow">In Progress</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn_order_details">12345</button></td>
+                                        <td><p class="table_sub_heading">01.12.2023</p></td>
+                                        <td><p class="table_sub_heading">4 pages</p></td>
+                                        <td><p class="table_sub_heading">£199.75</p></td>
+                                        <td><p class="table_status_pill green">Complete</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Mobile Table -->
+                        <div class="order_history_mobo desktop_none">
+
+                            <!-- add loop on this -->
+                            <div class="order_table_mobo">
+                                <div class="order_table_header">
+                                    <div class="order_table_head_row">
+                                        <p class="order_t_head">Order no #</p>
+                                        <button class="btn btn_order_details d-flex ms-auto">12345</button>
+                                    </div>
+                                </div>
+                                <div class="order_table_body">
+                                    <div class="order_table_body_row">
+                                        <p class="order_title_text">Date</p>
+                                        <p class="order_subtitle_text">01.12.2023</p>
+                                    </div>
+                                    <div class="order_table_body_row">
+                                        <p class="order_title_text">QTY</p>
+                                        <p class="order_subtitle_text">4 pages</p>
+                                    </div>
+                                    <div class="order_table_body_row">
+                                        <p class="order_title_text">Total</p>
+                                        <p class="order_subtitle_text_blue">£199.75</p>
+                                    </div>
+                                    <div class="order_table_body_row">
+                                        <p class="order_title_text">Status</p>
+                                        <p class="table_status_pill yellow">In Progress</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- loop ends here -->
+
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">

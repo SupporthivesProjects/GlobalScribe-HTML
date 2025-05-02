@@ -152,6 +152,74 @@
     line-height: normal;
     text-transform: capitalize;
 }
+.btn_global_trans {
+    display: flex;
+    padding: 15px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid #156EEB;
+    background: transparent;
+    color: #156EEB;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.btn_new_trans {
+    display: flex;
+    padding: 15px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid #156EEB;
+    background: transparent;
+    color: #156EEB;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 216px;
+}
+.btn_new_trans.active {
+    display: flex;
+    padding: 15px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid #A0ABF8;
+    background: var(--Gradient, linear-gradient(180deg, #156EEB 0%, #0048AC 100%));
+    color: var(--Grey-Scale-99, #FCFCFD);
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+
+    /* P/Btn */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 216px;
+}
 .dropped_div {
     position: absolute;
     border-radius: 20px;
@@ -388,7 +456,13 @@
     background: var(--Navy, #30325E);
     padding: 16px 0px;
 }
-
+.prz_btn_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
 @media only screen and (max-width: 700px) {
     .desktop_header {
         display: none;

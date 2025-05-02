@@ -50,3 +50,44 @@ function justDrop(droperId, roterId, element) {
         element.classList.remove("active")
     }
 }
+
+$(document).ready(function () {
+    if (screen.width < 700) {
+        const device_width = screen.width - 24;
+        const slider_width = screen.width - 50;
+        const slider_width2 = screen.width - 24;
+        $(".dash_tab_scrollable").css('width', device_width + 'px');
+        $("#oh_body_box_sub_main").css('width', slider_width + 'px');
+        $("#order_history_body_box").css('width', slider_width2 + 'px');
+    }
+});
+
+const radioButtons = document.querySelectorAll('.chek_inpoot');
+
+    radioButtons.forEach((radioButton) => {
+    radioButton.addEventListener('click', (event) => {
+      const frm = event.target.closest('.frm');
+      frm.classList.add('active');
+      const siblings = frm.parentNode.children;
+      for (let i = 0; i < siblings.length; i++) {
+        if (siblings[i] !== frm) {
+          siblings[i].classList.remove('active');
+        }
+      }
+    });
+});
+
+function field_box_file() {
+    console.log('me');
+    document.getElementById('document').click();
+}
+$("#document").on("change", function(e){
+    document.getElementById('upload_placeholder').innerHTML = e.target.files[0].name;
+})
+  
+
+function toggleActive(button) {
+    const buttons = document.querySelectorAll('.btn.btn_new_trans');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+}
