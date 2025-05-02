@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandSparkz</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/js/owl.carousel.js">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_center">
+
+                        <div class="service_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('service_drop', 'roter1', this)">
+                                Solutions
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter1" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none">
+                                    <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#30325E" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="dropped_div d-none" id="service_drop">
+                                <button class="btn btn_inner_drop">Certified&nbsp;translation</button>
+                                <button class="btn btn_inner_drop">Standard&nbsp;translation</button>
+                                <div class="drop_liner"></div>
+                                <button class="btn btn_inner_drop">Supported&nbsp;languages</button>
+                                <button class="btn btn_inner_drop">Supported&nbsp;documents</button>
+                            </div>
+                        </div>
+
+                        <button class="btn btn_header_link active">
+                            about us
+                        </button>
+
+                        <button class="btn btn_header_link">
+                            Join the team
+                        </button>
+
+                        <button class="btn btn_header_link">
+                            FAQ's
+                        </button>
+
+                        <button class="btn btn_header_link">
+                            Contact
+                        </button>
+
+
+
+
+                    </div>
+                    <div class="header_right">
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter2', this)">
+                                GBP
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter2" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none">
+                                    <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#30325E" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_inner_drop active">GBP</button>
+                                <button class="btn btn_inner_drop">GBP</button>
+                                <button class="btn btn_inner_drop">GBP</button>
+                                <button class="btn btn_inner_drop">GBP</button>
+                                <button class="btn btn_inner_drop">GBP</button>
+                                <button class="btn btn_inner_drop">GBP</button>
+                            </div>
+                        </div>
+                        <div class="merged_links_header">
+                            <div class="cart_drop_container">
+                                <button class="btn btn_header_link" onclick="justDrop('cart_drop', 'roter5', this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M4 9H20L19.1654 18.1811C19.0717 19.2112 18.208 20 17.1736 20H6.82643C5.79202 20 4.92829 19.2112 4.83464 18.1811L4 9Z"
+                                            stroke="#141414" stroke-width="2" stroke-linejoin="round" />
+                                        <path d="M8 11V8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8V11"
+                                            stroke="#141414" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                                <div class="cart_dropper_div d-none" id="cart_drop">
+                                    <h1 class="cart_title">Cart</h1>
+                                    <div class="cart_item">
+                                        <div class="cart_item_left">
+                                            <p class="cart_item_title">Certified Translation</p>
+                                            <p class="cart_item_subtitle">4 pages (1,000 words max)</p>
+                                        </div>
+                                        <div class="cart_item_right">
+                                            <p class="cart_item_price">$99.80</p>
+                                            <button class="btn btn_cart_bin">
+                                                <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="drop_liner"></div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_title">Subtotal</p>
+                                        <p class="cart_item_title">$99.80</p>
+                                    </div>
+                                    <div class="drop_liner"></div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_title_big">Total</p>
+                                        <p class="cart_item_title_big">$99.80</p>
+                                    </div>
+                                    <button class="btn btn_global">
+                                        Begin Your Translation
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn_header_link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M19 21C19 17.134 15.866 14 12 14C8.13401 14 5 17.134 5 21M12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11Z"
+                                        stroke="#30325E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="btn btn_global">
+                            Begin Your Translation
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="cart_menu">
+                            <img src="./assets/img/cart_mobo_menu.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <div class="service_drop_container">
+                    <button class="btn btn_header_drop" onclick="justDrop('service_drop_mob', 'roter3', this)">
+                        Solutions
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter3">
+                            <path d="M18 9L12 15L6 9" stroke="#3C3C3C" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="service_drop_mob">
+                        <button class="btn btn_inner_drop">Certified&nbsp;translation</button>
+                        <button class="btn btn_inner_drop">Standard&nbsp;translation</button>
+                        <div class="drop_liner"></div>
+                        <button class="btn btn_inner_drop">Supported&nbsp;languages</button>
+                        <button class="btn btn_inner_drop">Supported&nbsp;documents</button>
+                    </div>
+                </div>
+                <button class="btn btn_header_link">
+                    About Us
+                </button>
+                <button class="btn btn_header_link">
+                    Join the team
+                </button>
+                <button class="btn btn_header_link">
+                    FAQ's
+                </button>
+                <button class="btn btn_header_link">
+                    Contact
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop" onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#3C3C3C" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_inner_drop active">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                    </div>
+                </div>
+
+                <button class="btn btn_global">
+                    Begin Your Translation
+                </button>
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            <div class="header_cart_main_mobo">
+                <h1 class="cart_title">Cart</h1>
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">Certified Translation</p>
+                        <p class="cart_item_subtitle">4 pages (1,000 words max)</p>
+                    </div>
+                    <div class="cart_item_right">
+                        <p class="cart_item_price">$99.80</p>
+                        <button class="btn btn_cart_bin">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="drop_liner"></div>
+                <div class="cart_item">
+                    <p class="cart_item_title">Subtotal</p>
+                    <p class="cart_item_title">$99.80</p>
+                </div>
+                <div class="drop_liner"></div>
+                <div class="cart_item">
+                    <p class="cart_item_title_big">Total</p>
+                    <p class="cart_item_title_big">$99.80</p>
+                </div>
+                <button class="btn btn_global">
+                    Begin Your Translation
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <section class="cd_sec1_st extra_radius">
+            <img src="./assets/img/scroll.svg" alt="" class="img-fluid scroolll mobile_none">
+
+            <div class="col-md-6 td_right">
+
+            </div>
+            <div class="col-md-6 right_main_cd">
+                <div class="td_left">
+                    <div class="oval_div">
+                        <img src="./assets/img/td_icon.svg" alt="" class="img-fluid icon_img">
+                        Our Language Coverage
+                    </div>
+                    <h1 class="cd_tt">
+                        Built to Bridge
+
+                        <span class="cd_tt_span">
+                            Languages<br class="">
+                        </span> and Cultures
+                    </h1>
+                    <p class="cd_pp">Lorem ipsum dolor sit amet consectetur. Tellus varius morbi in volutpat aenean ut
+                        sed sed. Malesuada proin in id a a integer. Sapien sed ut eros adipiscing nunc sit. Mi turpis
+                        congue pellentesque libero.</p>
+                    <button class="blue_btn btn">
+                        Go Global Now
+                    </button>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+        <section class="td_sec2">
+
+            <div class="dash_pre_pill_t_3">
+                <img src="./assets/img/double_icon.svg" alt="" class="img-fluid dash_pre_img">
+                <h2 class="dash_pre_title">Document Examples</h2>
+            </div>
+
+            <h1 class="main_lang_tt">
+                Popular Documents
+            </h1>
+
+            <div class="container cus_pad">
+
+                <div class="doc_main">
+                    <div class="document_col">
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Academic Transcripts</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Adoption Documents</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Apostille</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Asylum Documents</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Background Check</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Bank Statement</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Birth Certificate</p>
+                        </div>
+
+                    </div>
+                    <div class="document_col">
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Brochure</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Business License</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Change Of Name</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Course Guide</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Criminal Record</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Death Certificate</p>
+                        </div>
+                        <div class="doc_single">
+                            <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                            <p class="lang_tt">Deposition</p>
+                        </div>
+
+                    </div>
+
+                    <div class="mobile_none">
+                        <div class="document_col">
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Diploma</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Divorce Documents</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Driver's License</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt"> Email</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Employee Manual</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Financial Statement</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Financial Statement</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    <div class="mobile_none">
+                        <div class="document_col">
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Legal Contract</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Marriage Certificate</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Medical Records</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Meeting Minutes</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Mortgage Application</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Passport</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Passport</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                    <div class="mobile_none">
+                        <div class="document_col">
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Press Release</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Product Manual</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Rental Agreement</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Resume</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">Tax Returns</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">University Application</p>
+                            </div>
+                            <div class="doc_single">
+                                <img src="./assets/img/doc_icon.svg" alt="" class="img-fluid">
+                                <p class="lang_tt">University Application</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="desktop_none">
+                <button class="blue_btn btn" style="margin-top: 24px;">
+                    View all
+                </button>
+            </div>
+            
+
+
+        </section>
+
+        <div class="div_contact2_t">
+            <div class="first_faq" style="width: auto;">
+                <img src="./assets/img/contact_logo.svg" alt="" class="img-fluid">
+                <p class="faq_pp">Pick Your Language, We’ll Do the Rest</p>
+            </div>
+            <h2 class="heading_contact2_inner_t">Contact Our team</h2>
+            <div class="contact2_inner1">
+                <div class="div_contact2_input">
+                    <input type="text" class="input_contact2" placeholder="Full Name">
+                    <input type="text" class="input_contact2" placeholder="Email Address">
+                </div>
+                <textarea name="" id="" class="textarea_contact2" placeholder="Your Message"></textarea>
+            </div>
+            <div class="contact2_inner2">
+                <div class="c-checkbox_s2">
+                    <div class="c-div_s2">
+                      <label class="d-flex justify-content-center justify-content-lg-start">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms"></label>
+                      </label>
+                    </div>
+                    <div class="c-text_s2">
+                      <p class="login_strong_s2_t para_contact2_inner2">By clicking the button you acknowledge that you have read and agree to the  <a href="">Terms of Use. </a></p>
+            
+                    </div>
+                </div>
+                <img src="./assets/img/robo_img.png" alt="" class="contact2_inner2_img">
+            </div>
+            <button class="btn btn_global contact2_btn">
+                Submit Your Query
+            </button>
+        </div>
+
+        <section class="sl_sec4" style="position: relative;">
+            <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
+                style="object-fit: cover;">
+                <source src="./assets/img/td_video.mp4" type="video/mp4">
+            </video>
+            <video class="bg-image d-lg-none d-md-none d-block" loop="" muted="" autoplay="" style="object-fit: cover;">
+                <source src="./assets/img/td_video_mob.mp4" type="video/mp4">
+            </video>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_top">
+                    <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                    <img src="./assets/img/master.png" alt="" class="img-fluid footer_master">
+                </div>
+                <div class="footer_center">
+                    <div class="footer_center_top">
+                        <button class="btn footer_links">Solutions</button>
+                        <div class="footer_disc"></div>
+                        <button class="btn footer_links">About us</button>
+                        <div class="footer_disc"></div>
+                        <button class="btn footer_links">Join the team</button>
+                        <div class="footer_disc"></div>
+                        <button class="btn footer_links">FAQ's</button>
+                        <div class="footer_disc"></div>
+                        <button class="btn footer_links">Contact</button>
+                        <div class="footer_disc"></div>
+                        <button class="btn footer_links">Terms & Conditions</button>
+                        <div class="footer_disc"></div>
+                        <button class="btn footer_links">Privacy Policy</button>
+                    </div>
+                    <div class="footer_bar desktop_none"></div>
+                    <div class="footer_center_bottom">
+                        <p class="footer_info order_mob_2">support@Globalscribe.co</p>
+                        <div class="footer_disc"></div>
+                        <p class="footer_info order_mob_3">
+                            COMPANY NAME LTD, 123 Placeholder Street<br>BUILDING NAME, 6th Floor, Flat/Office 601 0000,
+                            City Name, Country
+                        </p>
+                        <div class="footer_disc"></div>
+                        <p class="footer_info order_mob_1">123-00-0000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p class="footer_copyright">©Globalscribe.co. 2025 All right reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

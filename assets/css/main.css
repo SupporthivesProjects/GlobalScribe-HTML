@@ -1,7 +1,3 @@
-.bg-image:not([class*=absolute]) {
-    position: absolute;
-}
-
 .bg-image {
     top: 0;
     left: 0;
@@ -9,7 +5,9 @@
     height: 100%;
     z-index: 1;
 }
-
+.bg-image:not([class*=absolute]) {
+    position: absolute;
+}
 .desktop_header {
     display: block;
 }

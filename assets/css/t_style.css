@@ -714,6 +714,18 @@ line-height: 150%; /* 24px */
     margin-right: 112px;
 }
 
+<<<<<<< HEAD
+=======
+.aboutus_6_inin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 496px;
+    margin-left: auto;
+    margin-right: 186px;
+}
+
+>>>>>>> pr-3
 .st_inner_cd3 {
     display: flex;
     flex-direction: column;
@@ -722,6 +734,17 @@ line-height: 150%; /* 24px */
     margin-left: 112px;
     margin-right: auto;
 }
+<<<<<<< HEAD
+=======
+.aboutus_2_inin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 496px;
+    margin-left: 170px;
+    margin-right: auto;
+}
+>>>>>>> pr-3
 
 .cd3_pp {
     color: var(--Txt, #7F7F7F);
@@ -1683,6 +1706,144 @@ line-height: 150%; /* 24px */
     align-items: center;
     gap: 10px;
 }
+<<<<<<< HEAD
+=======
+
+.about_6 {
+        padding: 24px;
+        display: flex;
+        flex-direction: row;
+        background: url(../img/aboutus6_bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.about_2 {
+    position: relative;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    background: url(../img/aboutus2_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right_about2 {
+    border-radius: 0px 20px 20px 0px ;
+    height: 721px;
+        background: url(../img/aboutus2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.right_about6 {
+    border-radius: 20px 0px 0px 20px;
+height: 721px;
+    background: url(../img/right_about6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+.left_about6 {
+    display: flex
+    ;
+        align-items: center;
+}
+.left_about2 {
+    display: flex
+    ;
+        align-items: center;
+}
+.on_float {
+    position: absolute;
+    background: url(../img/float2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 240px;
+        height: 424px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aboutus_5 {
+    background: var(--Grey-Scale-97, #F7F7F8);
+    padding: 121px 0px 38px 0px;
+} 
+.below_that {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.left_below {
+    display: flex;
+    max-width: 496px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.right_below {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+
+}
+
+.per_per {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.each_per {
+    max-width: 347px;
+    width: 100%;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 0px 8px 8px 0px;
+}
+.per_tt {
+color: var(--Navy, #30325E);
+
+    /* H/H3 */
+    font-family: "Instrument Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    margin-bottom: 0px;
+}
+
+.per_pp {
+    margin-bottom: 0px;
+    color: var(--Txt, #7F7F7F);
+
+    /* P/S */
+    font-family: "Instrument Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.zero_margin {
+    margin: 0px;
+}
+
+>>>>>>> pr-3
 @media only screen and (max-width: 600px) {
     .mobile_none {
         display: none;
@@ -1691,6 +1852,77 @@ line-height: 150%; /* 24px */
     .desktop_none {
         display: block;
     }
+<<<<<<< HEAD
+=======
+    .aboutus_5 {
+        padding: 40px 24px;
+    }
+    .zero_margin {
+        margin-bottom: 24px;
+    }
+    .below_that {
+        flex-direction: column;
+    }
+    .right_below {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .each_per {align-items: center;
+        padding: 0px;
+        border-radius: 0px 8px 8px 0px;
+    }
+    .zero_pad {
+        padding: 0px;
+    }
+    .also_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .for_center {
+        text-align: center;
+    }
+    .per_per {
+        gap: 24px;
+    }
+    .per_tt {
+        color: var(--Navy, #30325E);
+        text-align: center;
+        
+        /* H/Mobile/H4 */
+        font-family: "Instrument Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 21.6px */
+        text-transform: capitalize;
+    }
+
+    .per_pp {
+        color: var(--Txt, #7F7F7F);
+text-align: center;
+
+/* P/S */
+font-family: "Instrument Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+    }
+    .on_float {
+        position: absolute;
+        background: url(../img/float_mob.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 39px;
+            top: 380px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+>>>>>>> pr-3
     .div_contact2_t {
         background: url(../img/mob_contact_bg.png);
         background-size: cover;
@@ -2058,12 +2290,20 @@ text-transform: capitalize;
         background-repeat: no-repeat;
     }
 
+<<<<<<< HEAD
     .inner_cd3 {
+=======
+    .inner_cd3,.aboutus_6_inin {
+>>>>>>> pr-3
         width: auto;
         margin: 0px;
     }
 
+<<<<<<< HEAD
     .st_inner_cd3 {
+=======
+    .st_inner_cd3,.aboutus_2_inin {
+>>>>>>> pr-3
         width: auto;
         margin: 0px;
     }
@@ -2640,6 +2880,49 @@ text-transform: capitalize;
         text-transform: capitalize;
         margin-bottom: 24px;
     }
+<<<<<<< HEAD
+=======
+    .about_6 {
+        padding: 0;
+        flex-direction: column-reverse;
+        background: none;
+    }
+    .about_2 {
+        padding: 0;
+        flex-direction: column;
+        background: none;
+    }
+    .right_about6 {
+        border-radius: 0px;
+        height: 375px;
+        background: url(../img/right_about6.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .right_about2 {
+        border-radius: 0px;
+        height: 375px;
+        background: url(../img/aboutus2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .left_about6 {
+            padding: 40px 24px;
+            background: url(../img/about6_mob.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .left_about2 {
+        padding: 64px 24px;
+        background: url(../img/aboutus2_mob.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+>>>>>>> pr-3
 }
 
 
@@ -2670,12 +2953,24 @@ text-transform: capitalize;
         margin-left: 30px;
     }
 
+<<<<<<< HEAD
     .inner_cd3 {
         margin-right: 0px;
     }
 
     .st_inner_cd3 {
         margin-left: 0px;
+=======
+    .inner_cd3,.aboutus_6_inin {
+        margin-right: 6px;
+    }
+
+    .st_inner_cd3 {
+        margin-left: 6px;
+    }
+    .aboutus_2_inin {
+        margin-left: 131px;
+>>>>>>> pr-3
     }
 
     .inner_rightcd4 {
@@ -2734,7 +3029,11 @@ text-transform: capitalize;
         width: 230px;
     }
 
+<<<<<<< HEAD
     .inner_cd3 {
+=======
+    .inner_cd3 ,.aboutus_6_inin {
+>>>>>>> pr-3
         margin-right: 38px;
     }
 
@@ -2742,6 +3041,12 @@ text-transform: capitalize;
         margin-left: 38px;
     }
 
+<<<<<<< HEAD
+=======
+    .aboutus_2_inin {
+        margin-left: 131px;
+    }
+>>>>>>> pr-3
     .inner_rightcd4 {
         margin-left: 42px;
     }
@@ -2794,14 +3099,24 @@ text-transform: capitalize;
         width: 255px;
     }
 
+<<<<<<< HEAD
     .inner_cd3 {
+=======
+    .inner_cd3 ,.aboutus_6_inin {
+>>>>>>> pr-3
         margin-right: 68px;
     }
 
     .st_inner_cd3 {
         margin-left: 68px;
     }
+<<<<<<< HEAD
 
+=======
+.aboutus_2_inin {
+    margin-left: 131px;
+}
+>>>>>>> pr-3
     .inner_rightcd4 {
         margin-left: 56px;
     }
@@ -2850,8 +3165,13 @@ text-transform: capitalize;
         gap: 40px;
     }
 
+<<<<<<< HEAD
     .inner_cd3,
     .st_inner_cd3 {
+=======
+    .inner_cd3,.aboutus_6_inin,
+    .st_inner_cd3 ,.aboutus_2_inin{
+>>>>>>> pr-3
         margin-right: 68px;
     }
 
@@ -2866,6 +3186,13 @@ text-transform: capitalize;
 }
 
 @media only screen and (min-width: 1500px) and (max-width:1599px) {
+<<<<<<< HEAD
+=======
+    .aboutus_6_inin
+     {
+        margin-right: 68px;
+    }
+>>>>>>> pr-3
 
     .inner_right_cd,
     .inner_right_sl,
@@ -2882,7 +3209,16 @@ text-transform: capitalize;
     }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 1600px) and (max-width:1699px) {}
+=======
+@media only screen and (min-width: 1600px) and (max-width:1699px) {
+   .aboutus_6_inin
+     {
+        margin-right: 68px;
+    }
+}
+>>>>>>> pr-3
 
 @media only screen and (min-width: 1700px) and (max-width:1799px) {}
 
