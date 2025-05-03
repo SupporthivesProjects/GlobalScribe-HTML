@@ -383,11 +383,16 @@ input[type=checkbox], input[type=radio] {
 .order_history table thead tr th:first-child {
     padding: 0px 0px 11px 14px;
 }
+.order_history table thead tr th {
+    border-bottom: 1px solid #E4E4E7;
+    background: transparent;
+}
 .order_history table thead tr th:last-child {
     padding: 0px 14px 11px 0px;
 }
 .order_history table tbody tr td {
     padding: 22px 0px;
+    background: transparent;
 }
 .order_history table tbody tr td:first-child {
     padding: 22px 14px;
@@ -409,6 +414,20 @@ input[type=checkbox], input[type=radio] {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0px;
+}
+.billing_page .dash_pre_pill::before {
+    content: url(../img/global_pre_left.svg);
+    position: absolute;
+    z-index: 1;
+    left: -72%;
+    top: -8px;
+}
+.billing_page .dash_pre_pill::after {
+    content: url(../img/global_pre_right.svg);
+    position: absolute;
+    z-index: 1;
+    right: -72%;
+    top: -8px;
 }
 .indicator_number {
     color: var(--Grey-Scale-99, #FCFCFD);
@@ -461,6 +480,10 @@ input[type=checkbox], input[type=radio] {
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
+    opacity: 0.5;
+}
+.indicator_div.active {
+    opacity: 1;
 }
 .indicator_main {
     display: flex;
@@ -1373,6 +1396,27 @@ p.suus {
     background-repeat: no-repeat;
     border-radius: 0px 20px 20px 0px;
 }
+.order_history_top_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.order_history_details .dash_pre_pill::after {
+    content: url(../img/global_pre_right.svg);
+    position: absolute;
+    z-index: 1;
+    right: -111%;
+    top: -8px;
+}
+.order_history_details .dash_pre_pill::before {
+    content: url(../img/global_pre_left.svg);
+    position: absolute;
+    z-index: 1;
+    left: -111%;
+    top: -8px;
+}
 .hs4_title {
     color: var(--Core-Off-White, #F6F6F6);
     text-align: center;
@@ -1789,6 +1833,13 @@ p.suus {
         line-height: normal;
         margin-bottom: 0px;
     }
+    .dual_btn_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
     .order_table_body {
         display: flex;
         flex-direction: column;
@@ -1808,6 +1859,30 @@ p.suus {
         font-weight: 500;
         line-height: normal;
         text-transform: capitalize;
+    }
+    .order_history_details .dash_pre_pill::after {
+        content: url(../img/global_pre_right_mobo.svg);
+        position: absolute;
+        z-index: 1;
+        right: -24%;
+        top: -8px;
+    }
+    .order_history_details .dash_pre_pill::before {
+        content: url(../img/global_pre_left_mobo.svg);
+        position: absolute;
+        z-index: 1;
+        left: -24%;
+        top: -8px;
+    }
+    .oh_body_sub_inner_subtitle {
+        color: var(--Txt, #7F7F7F);
+        font-family: "Instrument Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 0px;
+        text-align: right;
     }
     .order_table_mobo {
         padding: 16px;
@@ -1871,7 +1946,7 @@ p.suus {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         gap: 16px;
     }
     .mo_p_0 {
@@ -1998,6 +2073,21 @@ p.suus {
         border-radius: 0px;
         border: unset;
         background: #FCFCFD;
+    }
+
+    .billing_page .dash_pre_pill::before {
+        content: url(../img/global_pre_left_mobo.svg);
+        position: absolute;
+        z-index: 1;
+        left: -16%;
+        top: -8px;
+    }
+    .billing_page .dash_pre_pill::after {
+        content: url(../img/global_pre_right_mobo.svg);
+        position: absolute;
+        z-index: 1;
+        right: -16%;
+        top: -8px;
     }
     .summary_subtitle {
         color: var(--Navy, #30325E);
@@ -2419,6 +2509,7 @@ p.suus {
     .mobo_w_100 {
         width: 100%;
     }
+    
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {
@@ -2448,6 +2539,16 @@ p.suus {
         align-items: center;
         gap: 24px;
         max-width: 319px;
+    }
+    .custom_checkbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+    .c-checkbox2 input[type='checkbox']~label:after, .c-checkbox2 input[type='checkbox']~.label:after {
+        top: 16px;
     }
 }
 
