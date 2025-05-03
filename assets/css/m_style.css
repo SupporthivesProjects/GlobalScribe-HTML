@@ -1583,6 +1583,41 @@ p.suus {
 }
 
 
+
+
+
+
+
+
+.hs5 .cd_sec6 .left_6 {
+    padding-left: 24px;
+}
+.hs7 .st_cd_sec3 {
+    background: url(../img/hs7_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hs2_pre_content .dash_pre_pill::before {
+    content: url(../img/global_pre_left.svg);
+    position: absolute;
+    z-index: 1;
+    left: -139%;
+    top: -9px;
+}
+
+.hs2_pre_content .dash_pre_pill::after {
+    content: url(../img/global_pre_right.svg);
+    position: absolute;
+    z-index: 1;
+    right: -139%;
+    top: -9px;
+}
+
+
+
+
+
 @media only screen and (max-width: 700px) {
     .mobile_none {
         display: none;
@@ -2253,10 +2288,33 @@ p.suus {
     .hs2 {
         padding-top: 40px;
         padding-bottom: 40px;
-        background: url(../img/hs2_bg.png);
+        background: url(../img/hs2_mobo_bg.png);
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
+    }
+    .hs3_left {
+        height: 375px;
+        background: url(../img/hs3_mobo_left.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0px;
+    }
+    .hs4_title {
+        color: var(--Core-Off-White, #F6F6F6);
+        text-align: center;
+
+        /* H/Mobile/H2 */
+        font-family: "Instrument Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 36px */
+        text-transform: capitalize;
+    }
+    .hs5 .cd_sec6 .left_6 {
+        padding-left: 0px;
     }
     .hs1 {
         position: relative;
@@ -2327,6 +2385,41 @@ p.suus {
         font-weight: 700;
         line-height: 120%;
         text-transform: capitalize;
+    }
+
+    .hs2_pre_content .dash_pre_pill::before {
+        content: url(../img/global_pre_left_mobo.svg);
+        position: absolute;
+        z-index: 1;
+        left: -31%;
+        top: -9px;
+    }
+    .hs2_pre_content .dash_pre_pill::after {
+        content: url(../img/global_pre_right_mobo.svg);
+        position: absolute;
+        z-index: 1;
+        right: -31%;
+        top: -9px;
+    }
+    .hs6_card {
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: none;
+    }
+    .btn_owl {
+        padding: 0px;
+    }
+    #home_owl .owl-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 47%;
+    }
+    .mobo_w_100 {
+        width: 100%;
     }
 }
 

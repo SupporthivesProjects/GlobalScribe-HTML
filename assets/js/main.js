@@ -100,7 +100,13 @@ $(document).ready(function () {
         dots: false,
         responsive:{
             0:{
-                items:1
+                loop: true,
+                items:1,
+                nav: true,
+                navText: [
+                    "<span class='btn btn_owl'><img src='./assets/img/owl_icon_left.png'/></span>",
+                    "<span class='btn btn_owl'><img src='./assets/img/owl_icon_right.png'/></span>"
+                ],
             },
             600:{
                 items:3
