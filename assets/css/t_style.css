@@ -975,16 +975,16 @@ line-height: 150%; /* 24px */
     content: url('../img/global_pre_left.svg');
     position: absolute;
     z-index: 1;
-    left: -138%;
-    top: -8px;
+    left: -142%;
+    top: -9px;
 }
 
 .dash_pre_pill_t::after {
     content: url('../img/global_pre_right.svg');
     position: absolute;
     z-index: 1;
-    right: -138%;
-    top: -8px;
+    right: -142%;
+    top: -9px;
 }
 .dash_pre_pill_t_2::before {
     content: url('../img/global_pre_left.svg');
@@ -1273,7 +1273,7 @@ line-height: 150%; /* 24px */
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url('/assets/img/plus_svg.svg');
+    background-image: url('../img/plus_svg.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1295,7 +1295,7 @@ line-height: 150%; /* 24px */
 
 /* When accordion is open, switch to minus icon */
 .custom-accordion .accordion-button:not(.collapsed) .icon::before {
-    background-image: url('/assets/img/minus_svg.svg');
+    background-image: url('../img/minus_svg.svg');
 }
 
 
@@ -1355,7 +1355,7 @@ line-height: 150%; /* 24px */
 }
 
 .faq_1 {
-    background-image: url('/assets/img/faq_bg.png');
+    background-image: url('../img/faq_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1438,7 +1438,7 @@ line-height: 150%; /* 24px */
     gap: 24px;
     border-radius: 20px;
     border: 1px solid #E1E4EB;
-    background-image: url('/assets/img/right_faq_bg.png');
+    background-image: url('../img/right_faq_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1511,7 +1511,7 @@ line-height: 150%; /* 24px */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/assets/img/joinus_sec2_bg.png');
+    background-image: url('../img/joinus_sec2_bg.png');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1582,7 +1582,7 @@ line-height: 150%; /* 24px */
 }
 
 .circle_one {
-    background-image: url('/assets/img/circle_bg.png');
+    background-image: url('../img/circle_bg.png');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1636,14 +1636,14 @@ line-height: 150%; /* 24px */
 }
 .sl_sec2 {
     padding: 80px 0px;
-    background-image: url('/assets/img/sec2_lang_bg.png');
+    background-image: url('../img/sec2_lang_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
 }
 .td_sec2 {
     padding: 80px 0px;
-    background-image: url('/assets/img/doc_bg.png');
+    background-image: url('../img/doc_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -1842,6 +1842,10 @@ color: var(--Navy, #30325E);
 
     .desktop_none {
         display: block;
+    }
+
+    .div_contact2_t .c-checkbox_s2 input[type='checkbox']~label:after, .c-checkbox_s2 input[type='checkbox']~.label:after {
+        top: 16px;
     }
     .aboutus_5 {
         padding: 40px 24px;
@@ -2640,7 +2644,7 @@ text-transform: capitalize;
 
     .faq_1 {
         margin-top: 69px;
-        background-image: url(/assets/img/mob_faq_bg.png);
+        background-image: url(../img/mob_faq_bg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -2685,7 +2689,7 @@ text-transform: capitalize;
         align-self: stretch;
         border-radius: 0px;
         border: 1px solid #E1E4EB;
-        background-image: url(/assets/img/faq_bg_mob.png);
+        background-image: url(../img/faq_bg_mob.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -2748,7 +2752,7 @@ text-transform: capitalize;
 
     .joinus_sec2 {
         padding: 40px 24px;
-        background-image: url('/assets/img/mob_joinus2_bg.png');
+        background-image: url('../img/mob_joinus2_bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
@@ -2821,14 +2825,14 @@ text-transform: capitalize;
     }
     .sl_sec2 {
         padding: 40px 24px;
-        background-image: url('/assets/img/mobsec2_bg_lang.png');
+        background-image: url('../img/mobsec2_bg_lang.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
     }
     .td_sec2 {
         padding: 40px 24px;
-        background-image: url('/assets/img/mobtd_sec2_bg.png');
+        background-image: url('../img/mobtd_sec2_bg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
