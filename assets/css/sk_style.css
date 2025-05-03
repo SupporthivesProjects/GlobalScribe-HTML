@@ -720,6 +720,10 @@ input[type=radio] {
     gap: 24px;
     flex: 1 0 0;
     align-self: stretch;
+    background: url(../img/repass_left_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .heading_RP {
@@ -894,7 +898,7 @@ input[type=radio] {
     /* with class ModalCarrot ??*/
     position: absolute;
     z-index: 1;
-    left: -76%;
+    left: -73%;
     top: -7px;
 }
 
@@ -903,7 +907,7 @@ input[type=radio] {
     /* with class ModalCarrot ??*/
     position: absolute;
     z-index: 1;
-    right: -76%;
+    right: -73%;
     top: -7px;
 }
 
@@ -1218,7 +1222,7 @@ margin-bottom: 0%;
 
     .term {
         background-image: url(../img/term_bg_mo.png);
-        background-position: center top;
+        background-position: center top -115px;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -1307,7 +1311,7 @@ margin-bottom: 0%;
     .c-checkbox input[type='checkbox']~label:after,
     .c-checkbox input[type='checkbox']~.label:after {
         height: 15px;
-        top: 32px;
+        top: 21.5px;
     }
 
     .signin_btn_inner {
@@ -1331,6 +1335,12 @@ margin-bottom: 0%;
         align-items: center;
         gap: 24px;
         align-self: stretch;
+        margin-bottom: 24px;
+        border-radius: 0px 0px 10px 10px;
+        background: url(../img/pay_succ_mobo.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
     .heading_CS {
@@ -1414,10 +1424,15 @@ margin-bottom: 0%;
         justify-content: center;
         align-items: center;
         gap: 16px;
-        padding-top: 221px;
-        padding-bottom: 96px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    section.contact {
+        margin-top: 69px;
     }
 
     .heading_contact {
@@ -1445,7 +1460,10 @@ margin-bottom: 0%;
     }
 
     .div_contact2 {
-        background-image: url(../img/signup_mo.png);
+        background-image: url(../img/contact_mobo_bg_s2.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
         display: flex;
         width: 100%;
         padding: 40px 24px;
@@ -1505,7 +1523,7 @@ margin-bottom: 0%;
         /* with class ModalCarrot ??*/
         position: absolute;
         z-index: 1;
-        left: -21%;
+        left: -18%;
         top: -7px;
     }
 
@@ -1514,7 +1532,7 @@ margin-bottom: 0%;
         /* with class ModalCarrot ??*/
         position: absolute;
         z-index: 1;
-        right: -21%;
+        right: -19%;
         top: -7px;
     }
 
