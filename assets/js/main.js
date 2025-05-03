@@ -50,8 +50,6 @@ function justDrop(droperId, roterId, element) {
         element.classList.remove("active")
     }
 }
-
-<<<<<<< HEAD
 $(document).ready(function () {
     if (screen.width < 700) {
         const device_width = screen.width - 24;
@@ -92,33 +90,23 @@ function toggleActive(button) {
     buttons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 }
-=======
 
-
-document.addEventListener("DOMContentLoaded", () => {
-    // On load: fix styling for already open items
-    document.querySelectorAll(".accordion-collapse.show").forEach(openItem => {
-      const button = openItem.previousElementSibling.querySelector(".accordion-button");
-      button.classList.remove("collapsed");
-      button.classList.add("open");
-    });
-
-    // Add event listeners for Bootstrap's collapse events
-    const accordionItems = document.querySelectorAll(".accordion-item");
-
-    accordionItems.forEach(item => {
-      const collapse = item.querySelector(".accordion-collapse");
-      const button = item.querySelector(".accordion-button");
-
-      collapse.addEventListener("shown.bs.collapse", () => {
-        button.classList.remove("collapsed");
-        button.classList.add("open");
-      });
-
-      collapse.addEventListener("hidden.bs.collapse", () => {
-        button.classList.remove("open");
-        button.classList.add("collapsed");
-      });
-    });
-  });
->>>>>>> pr-3
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop:false,
+        margin: 28,
+        nav:false,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+})
