@@ -116,3 +116,73 @@ $(document).ready(function () {
         }
     })
 })
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // On load: fix styling for already open items
+    document.querySelectorAll(".accordion-collapse.show").forEach(openItem => {
+      const button = openItem.previousElementSibling.querySelector(".accordion-button");
+      button.classList.remove("collapsed");
+      button.classList.add("open");
+    });
+
+    // Add event listeners for Bootstrap's collapse events
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach(item => {
+      const collapse = item.querySelector(".accordion-collapse");
+      const button = item.querySelector(".accordion-button");
+
+      collapse.addEventListener("shown.bs.collapse", () => {
+        button.classList.remove("collapsed");
+        button.classList.add("open");
+      });
+
+      collapse.addEventListener("hidden.bs.collapse", () => {
+        button.classList.remove("open");
+        button.classList.add("collapsed");
+      });
+    });
+});
+
+function field_box_file() {
+    console.log('me');
+    document.getElementById('document').click();
+}
+$("#document").on("change", function(e){
+    document.getElementById('upload_placeholder').innerHTML = e.target.files[0].name;
+})
+  
+
+function toggleActive(button) {
+    const buttons = document.querySelectorAll('.btn.btn_new_trans');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+}
+
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop:false,
+        margin: 28,
+        nav:false,
+        dots: false,
+        responsive:{
+            0:{
+                loop: true,
+                items:1,
+                nav: true,
+                navText: [
+                    "<span class='btn btn_owl'><img src='./assets/img/owl_icon_left.png'/></span>",
+                    "<span class='btn btn_owl'><img src='./assets/img/owl_icon_right.png'/></span>"
+                ],
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+})
