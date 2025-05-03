@@ -265,7 +265,8 @@
 .cart_dropper_div {
     position: absolute;
     top: 62px;
-    left: 0px;
+    /* left: 0px; */
+    right: 0px;
     border: 1px solid #E1E4EB;
     background: url(../img/drop_bg.png);
     background-repeat: no-repeat;
@@ -461,6 +462,30 @@
     align-items: center;
     gap: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#service_drop {
+    min-width: 277px;
+}
+#currency_drop {
+    min-width: 141px;
+}
+
+
+
 @media only screen and (max-width: 700px) {
     .desktop_header {
         display: none;
@@ -524,6 +549,12 @@
         line-height: normal;
         text-transform: capitalize;
         text-align: left;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
     }
     .btn_header_drop {
         color: var(--Navy, #1A1A1A);
@@ -612,7 +643,7 @@
 
     .footer {
         padding-top: 64px;
-        background: url(../img/footer_bg.png);
+        background: url(../img/footer_mobo_bg.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -649,6 +680,23 @@
         width: calc(100% - 24px);
         height: 1px;
         background: #B3B3B3;
+    }
+    .footer_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        max-width: 179px;
+    }
+    .footer_logo {
+        min-width: 179px;
+    }
+    .mob_header_two_side {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }    
 
