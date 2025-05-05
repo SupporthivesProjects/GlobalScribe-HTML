@@ -253,7 +253,7 @@
                     <input type="text" class="login_input" placeholder="Password">
                 </div>
                 <div class="div_login_btn">
-                    <button class="btn btn_global w-100">
+                    <button class="btn btn_global w-100" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                         Sign In
                     </button>
                     <p class="para_login">Forgot your password?</p>
@@ -285,9 +285,39 @@
                     </div>
                     <div class="signin_btn_inner">
                         <img src="./assets/img/robo_img.png" alt="" class="robo_img_login">
-                        <button class="btn btn_global w-100">
+                        <button class="btn btn_global w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             Create an account
                         </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered custom_modal">
+                <div class="modal-content">
+                    <div class="modal_main">
+                        <h1 class="modal_title">Account Successfully Created!</h1>
+                        <p class="modal_subtitle">Diam tincidunt vestibulum pharetra nulla non nullam. Tellus lobortis.</p>
+                        <div class="modal_btn_div mx-auto">
+                            <button class="btn btn_global w-50">confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered custom_modal">
+                <div class="modal-content">
+                    <div class="modal_main">
+                        <h1 class="modal_title unuccess">Something went wrong</h1>
+                        <p class="modal_subtitle">Diam tincidunt vestibulum pharetra nulla non nullam. Tellus lobortis.</p>
+                        <div class="modal_btn_div mx-auto">
+                            <button class="btn btn_global w-50">close</button>
+                        </div>
                     </div>
                 </div>
             </div>

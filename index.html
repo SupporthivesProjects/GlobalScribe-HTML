@@ -210,7 +210,7 @@
 
                 <div class="mob_header_two_side">
                     <div class="mob_header_two_side_l">
-                        <button class="btn btn_header_link">
+                        <button class="btn btn_header_link cart_menu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M4 9H20L19.1654 18.1811C19.0717 19.2112 18.208 20 17.1736 20H6.82643C5.79202 20 4.92829 19.2112 4.83464 18.1811L4 9Z" stroke="#141414" stroke-width="2" stroke-linejoin="round"/>
                                 <path d="M8 11V8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8V11" stroke="#141414" stroke-width="2" stroke-linecap="round"/>
@@ -258,9 +258,14 @@
                     <p class="cart_item_title_big">Total</p>
                     <p class="cart_item_title_big">$99.80</p>
                 </div>
-                <button class="btn btn_global">
-                    Begin Your Translation
-                </button>
+                <div class="d-flex gap-3">
+                    <button class="btn btn_global_trans w-100" onclick="closeMobileCart()">
+                        back to menu
+                    </button>
+                    <button class="btn btn_global w-100">
+                        checkout
+                    </button>
+                </div>
             </div>
         </div>
     </header>

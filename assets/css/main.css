@@ -236,6 +236,8 @@
     gap: 24px;
     top: 62px;
     left: 0px;
+    transform: translateX(-10%);
+
 }
 .currency_drop_container, .service_drop_container {
     position: relative;
@@ -265,8 +267,8 @@
 .cart_dropper_div {
     position: absolute;
     top: 62px;
-    /* left: 0px; */
-    right: 0px;
+    left: 0px;
+    /* right: 0px; */
     border: 1px solid #E1E4EB;
     background: url(../img/drop_bg.png);
     background-repeat: no-repeat;
@@ -280,6 +282,7 @@
     justify-content: flex-start;
     align-items: stretch;
     gap: 24px;
+    transform: translateX(-35%);
 }
 .cart_title {
     color: var(--Navy, #30325E);
@@ -482,6 +485,7 @@
 }
 #currency_drop {
     min-width: 141px;
+    transform: translateX(-19%);
 }
 
 
@@ -592,6 +596,8 @@
         gap: 24px;
         top: 0px;
         left: 0px;
+        transform: none;
+        padding-bottom: 0px;
     }
     .currency_drop_container .dropped_div {
         flex-direction: row;
