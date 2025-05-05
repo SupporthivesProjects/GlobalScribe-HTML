@@ -99,12 +99,12 @@ $(document).ready(function () {
         dots: false,
         responsive:{
             0:{
-                loop: true,
+                loop: false,
                 items:1,
                 nav: true,
                 navText: [
-                    "<span class='btn btn_owl'><img src='./assets/img/owl_icon_left.png'/></span>",
-                    "<span class='btn btn_owl'><img src='./assets/img/owl_icon_right.png'/></span>"
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'><path d='M13 7H1M1 7L7 1M1 7L7 13' stroke='#FCFCFD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'><path d='M1 7H13M13 7L7 1M13 7L7 13' stroke='#FCFCFD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
                 ],
             },
             600:{
@@ -160,29 +160,3 @@ function toggleActive(button) {
     buttons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 }
-
-$(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
-        loop:false,
-        margin: 28,
-        nav:false,
-        dots: false,
-        responsive:{
-            0:{
-                loop: true,
-                items:1,
-                nav: true,
-                navText: [
-                    "<span class='btn btn_owl'><img src='./assets/img/owl_icon_left.png'/></span>",
-                    "<span class='btn btn_owl'><img src='./assets/img/owl_icon_right.png'/></span>"
-                ],
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:4
-            }
-        }
-    })
-})
