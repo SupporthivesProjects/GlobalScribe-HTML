@@ -2226,6 +2226,70 @@ p.suus {
         line-height: 120%; /* 36px */
         text-transform: capitalize;
     }
+    .custom_modal {
+        margin: 0px;
+    }
+    .custom_modal .modal-content {
+        border-radius: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    .modal_title {
+        color: var(--Navy, #30325E);
+        text-align: center;
+
+        /* H/Mobile/H2 */
+        font-family: "Instrument Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 36px */
+        text-transform: capitalize;
+        margin-bottom: 16px;
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .modal_subtitle {
+        color: var(--Txt, #7F7F7F);
+        text-align: center;
+
+        /* P/Small */
+        font-family: "Instrument Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+    .modal_btn_div {
+        display: flex;
+        width: unset;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+    .modal_main {
+        padding-top: 92.5px;
+        padding-bottom: 92.5px;
+        background: url(../img/map_mod_mobo.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .hs6 #home_owl .owl-nav .owl-prev.disabled svg {
+        opacity: 0.2;
+    }
+    .hs6 #home_owl .owl-nav .owl-next.disabled svg {
+        opacity: 0.2;
+    }
+    .hs6 #home_owl .owl-nav button:hover * {
+        background: #156EEB;
+        outline: none;
+        border: 0px;
+    }
     .order_details_subtitle {
         color: var(--Txt, #7F7F7F);
         text-align: center;
@@ -2574,7 +2638,15 @@ p.suus {
         box-shadow: none;
     }
     .btn_owl {
-        padding: 0px;
+        border-radius: 100px;
+        background: var(--Blue, #156EEB);
+        padding: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
     }
     #home_owl .owl-nav {
         display: flex;
