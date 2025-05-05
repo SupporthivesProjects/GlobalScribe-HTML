@@ -1845,7 +1845,7 @@ color: var(--Navy, #30325E);
     }
 
     .div_contact2_t .c-checkbox_s2 input[type='checkbox']~label:after, .c-checkbox_s2 input[type='checkbox']~.label:after {
-        top: 16px;
+        top: 28px;
     }
     .aboutus_5 {
         padding: 40px 24px;
@@ -2291,6 +2291,9 @@ text-transform: capitalize;
         width: auto;
         margin: 0px;
     }
+    .aboutus_2_inin {
+        align-items: center;
+    }
 
     .cd3_tt {
         color: var(--Navy, #30325E);
@@ -2303,6 +2306,7 @@ text-transform: capitalize;
         line-height: 120%;
         /* 36px */
         text-transform: capitalize;
+        text-align: center;
     }
 
     .cd3_tt_span {
@@ -2322,6 +2326,7 @@ text-transform: capitalize;
 
     .cd3_pp {
         margin-bottom: 24px;
+        text-align: center;
     }
 
     .cd_sec4 {
